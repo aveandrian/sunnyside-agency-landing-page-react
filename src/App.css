@@ -296,13 +296,16 @@ main {
   color: white;
 }
 
-footer, footer > a {
+footer {
   font-size: 0.875rem;
   padding-top: 1.25rem;
   text-align: center;
   background-color: rgb(144, 212,197);
 }
 
+footer > a {
+  font-size: 0.875rem;
+}
 
 @media screen and (max-width: 1200px) {
 
