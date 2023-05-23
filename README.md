@@ -19,4 +19,4 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://github.com/aveandrian/sunnyside-agency-landing-page-react/assets/13519212/9a3cd296-e311-496a-9224-da9a3fe90762)
