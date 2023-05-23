@@ -18,7 +18,6 @@ export default function Navbar(){
                 <div className='contact-container'>
                     <a className='contact-link'>Contact</a>
                 </div>
-                
             </div>
             <img className='menu-btn' src='/images/icon-hamburger.svg' onClick={toggleIsOpened} alt='Menu button'></img>
         </nav>

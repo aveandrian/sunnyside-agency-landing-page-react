@@ -42,26 +42,27 @@ nav {
 }
 
 @media screen and (max-width: 1200px) {
+   
     .menu-btn {
         visibility: visible;
     }
 
     .nav-items {
         visibility: hidden;
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2.5rem;
         padding: 3.125rem;
-        left: 100vw;
         top: 15vh;
         background-color: white;
-        width: 90vw;
+        width: 90%;
         align-self: center;
         justify-self: center;
         transition: 1s ease-in-out;
+        transform: translateX(100vh);
     }
 
     .nav-items > a {
@@ -86,6 +87,6 @@ nav {
 
     .nav-items.opened {
         visibility: visible;
-        transform: translateX(-95vw);
+        transform: translateX(-1vw);
     }
 }
