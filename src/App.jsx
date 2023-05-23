@@ -10,7 +10,7 @@ function App() {
           <Navbar />
           <div className='header-content'>
             <h1 className='header-title'>We are creatives</h1>
-            <img className='arrow' src='/images/icon-arrow-down.svg'></img>
+            <img className='arrow' src='/images/icon-arrow-down.svg' alt='Arrow down image'></img>
           </div>
         </div>
         <div className='transform-section'>
@@ -49,20 +49,20 @@ function App() {
           <h2 className='review-title'>Client testimonials</h2>
           <div className='review-content'>
             <div className='review'>
-                <img className='review-ava' src='/images/image-emily.jpg'></img>
+                <img className='review-ava' src='/images/image-emily.jpg' alt='Emily avatar'></img>
                 <p className='review-text'>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
                 <p className='review-name'>Emily R.</p>
                 <p className='review-work'>Marketing Director</p>
             </div>
             <div className='review'>
-                <img className='review-ava' src='/images/image-thomas.jpg'></img>
+                <img className='review-ava' src='/images/image-thomas.jpg' alt='Thomas avatar'></img>
                 
                 <p className='review-text'>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
                 <p className='review-name'>Thomas S.</p>
                 <p className='review-work'>Chief Operating Officer</p>
             </div>
             <div className='review'>
-                <img className='review-ava' src='/images/image-jennie.jpg'></img>
+                <img className='review-ava' src='/images/image-jennie.jpg' alt='Jennie avatar'></img>
                 <p className='review-text'>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
                 <p className='review-name'>Jennie F.</p>
                 <p className='review-work'>Business Owner</p>
@@ -74,35 +74,24 @@ function App() {
         <div className='ice-cream-picture'></div>
         <div className='cubes-picture'></div>
         <div className='social-section'>
-          <img className='footer-logo' src='/images/logo.svg'></img>
+          <img className='footer-logo' src='/images/logo-footer.svg' alt='Logo'></img>
           <div className='social-links'>
             <a>About</a>
             <a>Services</a>
-            <a>Services</a>Projects
+            <a>Projects</a>
           </div> 
           <div className='social-icons'>
-            <img src='/images/icon-facebook.svg'></img>
-            <img src='/images/icon-instagram.svg'></img>
-            <img src='/images/icon-twitter.svg'></img>
-            <img src='/images/icon-pinterest.svg'></img>
-          
+            <i className="fa-brands fa-facebook fa-lg"></i>
+            <i className="fa-brands fa-instagram fa-lg" ></i>
+            <i className="fa-brands fa-twitter fa-lg" ></i>
+            <i className="fa-brands fa-pinterest fa-lg"></i>
           </div>
         </div>
-
-  
-  
-
-
-  
-
-
-
-
-  </main>
-  <footer className="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+      </main>
+      <footer className="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/aveandrian">aveandrian</a>.
+      </footer>
     </>
   )
 }

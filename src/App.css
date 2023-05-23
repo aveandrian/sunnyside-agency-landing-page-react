@@ -2,9 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Barlow', sans-serif; */
-font-family: 'Fraunces', serif;
-font-size: 18px;
+  font-family: 'Fraunces', serif;
+  font-size: 1.125rem;
 }
 
 body, #root {
@@ -15,7 +14,6 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: 2fr repeat(8, 1fr) */
 }
 
 .header-section {
@@ -23,8 +21,8 @@ main {
   grid-row: 1 / span 2;
   height: 100vh;
   background-image: url('/images/desktop/image-header.jpg');
-  background-size: 100%;
-  background-position: 0 -15vh;
+  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
@@ -33,16 +31,16 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .header-title {
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin-top: 2.5rem;
+  margin-bottom: 3.125rem;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 55px;
+  font-size: 3.438rem;
 }
 
 .transform-section {
@@ -58,12 +56,12 @@ main {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  gap: 40px;
-  padding: 150px; 
+  gap: 2.5rem;
+  padding: 9.375rem; 
 }
 
 .transform-title, .stand-title {
-  font-size: 43px;
+  font-size: 2.688rem;
 }
 
 .transform-text, .stand-text {
@@ -81,12 +79,12 @@ main {
   position: absolute;
   bottom: 0;
   left: -10%;
-  height: 10px;
-  border-radius: 10px;
+  height: 0.625rem;
+  border-radius: 0.625rem;
   z-index: -1;
-  width: 10px;
+  width: 0.625rem;
   width: 120%;
-  background-color: hsl(51, 100%, 49%);
+  background-color: hsla(51, 100%, 49%, 0.4);
 }
 
 .transform-picture {
@@ -114,8 +112,22 @@ main {
 }
 
 .stand-link::after {
-  background-color: hsl(7, 99%, 70%);
+  background-color: hsla(7, 99%, 70%, 0.4);
 }
+
+.transform-link:hover, .stand-link:hover {
+  cursor: pointer;
+}
+
+.transform-link:hover:after {
+  background-color: hsl(51, 100%, 49%);
+}
+
+.stand-link:hover:after {
+  background-color: hsl(7, 99%, 70%);
+
+}
+
 
 .graphic-design-section, .photography-section {
   grid-column: 1 / span 2;
@@ -126,11 +138,11 @@ main {
   height: 600px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
   justify-content: end;
   align-items: center;
   text-align: center;
-  padding: 0 190px 90px;
+  padding: 0 11.875rem 5.625rem;
   color: hsl(167, 40%, 24%);
 }
 
@@ -139,7 +151,7 @@ main {
 }
 
 .graphic-design-title, .photography-title {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .graphic-design-text, .photography-text {
@@ -165,7 +177,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 3.125rem;
 }
 .review-title {
   text-transform: uppercase;
@@ -176,7 +188,7 @@ main {
 .review-content {
   display: flex;
   justify-content: center;
-  gap: 40px
+  gap: 2.5rem
 }
 
 .review {
@@ -184,24 +196,24 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 27%
+  width: 30%
 }
 
 .review-ava {
   width: 20%;
-  margin-bottom: 50px;
-  border-radius: 50px;
+  margin-bottom: 3.125rem;
+  border-radius: 3.125rem;
 }
 
 .review-text {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   font-family: 'Barlow', sans-serif;
   color: hsl(213, 9%, 39%)
 }
 
 .review-work {
   font-family: 'Barlow', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: hsl(210, 4%, 67%)
 }
 
@@ -245,22 +257,190 @@ main {
 .social-section {
   grid-column: 1 / span 4;
   grid-row: 9;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
-  background-color: hsl(168, 34%, 41%);
+  gap: 3.125rem;
+  padding: 3.125rem;
+  background-color: rgb(144, 212,197);
+}
+
+.social-links, .social-links> a {
+  color: hsl(212, 27%, 19%);
+  display: flex;
+  gap: 3.125rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.875rem;
+  
+}
+
+.social-links> a:hover {
+  cursor: pointer;
+  color: white;
 }
 
 .social-icons {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
+  margin-top: auto;
+}
+
+.fa-brands {
+  color: #2c7566
+}
+
+.fa-brands:hover {
+  cursor: pointer;
+  color: white;
 }
 
 footer, footer > a {
-  padding-top: 20px;
+  font-size: 0.875rem;
+  padding-top: 1.25rem;
   text-align: center;
-  background-color: hsl(168, 34%, 41%);
+  background-color: rgb(144, 212,197);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .header-section {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url('/images/mobile/image-header.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .header-title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .transform-picture {
+    grid-column: 1 /span 2;
+    grid-row: 3;
+    background-image: url('/images/mobile/image-transform.jpg');
+    background-size: 100% contain;
+    height: 50vh;
+  }
+
+  .transform-section {
+    grid-column: 1 /span 2;
+    grid-row: 4;
+    height: 50vh;
+  }
+
+  .transform-content, .stand-content  {
+    padding: 0.625rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .transform-title, .stand-title {
+    font-size: 2rem;
+  }
+
+  .stand-picture {
+    grid-column: 1 /span 2;
+    grid-row: 5;
+    height: 50vh;
+    background-image: url('/images/mobile/image-stand-out.jpg');
+    background-size: 100% contain;
+  }
+
+  .stand-section {
+    grid-column: 1 /span 2;
+    grid-row: 6;
+    height: 50vh;
+  }
+
+
+
+  .graphic-design-section {
+    grid-column: 1 /span 2;
+    grid-row: 7;
+    height: 624px;
+    background-image: url('/images/mobile/image-graphic-design.jpg');
+    background-size: cover;
+  }
+
+  .photography-section {
+    grid-column: 1 /span 2;
+    grid-row: 8;
+    height: 624px;
+    background-image: url('/images/mobile/image-photography.jpg');
+    background-size: cover;
+  }
+
+  .graphic-design-section, .photography-section {
+    padding: 0 0.625rem 3.125rem;
+  }
+
+  .review-section {
+    grid-column: 1 /span 2;
+    grid-row: 9;
+    height: fit-content;
+    width: 100%;
+    padding: 3.125rem 0.625rem;
+  }
+
+  .review-content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .review-content {
+    flex-direction: column;
+  }
+
+  .review {
+    width: 100%;
+  }
+
+  .milk-picture {
+    grid-column: 1 ;
+    grid-row: 10;
+    height: 200px;
+    background-image: url('/images/mobile/image-gallery-milkbottles.jpg');
+    background-size: cover;
+  }
+
+  .orange-picture {
+    grid-column: 2;
+    grid-row: 10;
+    height: 200px;
+    background-image: url('/images/mobile/image-gallery-orange.jpg');
+    background-size: cover;
+  }
+
+  .ice-cream-picture {
+    grid-column: 1;
+    grid-row: 11;
+    height: 200px;
+    background-image: url('/images/mobile/image-gallery-cone.jpg');
+    background-size: cover;
+  }
+
+  .cubes-picture {
+    grid-column: 2;
+    grid-row: 11;
+    height: 200px;
+    background-image: url('/images/mobile/image-gallery-sugar-cubes.jpg');
+    background-size: cover;
+  }
+
+  .social-section {
+    grid-column: 1 / span 2;
+    grid-row: 12;
+  }
 }

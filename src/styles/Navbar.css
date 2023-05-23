@@ -1,53 +1,91 @@
 nav {
     display: flex;
-    padding: 20px;
+    align-items: center;
+    padding: 1.25rem;
 }
 
 .logo {
     margin-right: auto;
+    height: 100%;
 }
 
-.nav-items {
+.nav-items, .nav-items > a {
+    font-size: 0.875rem;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    font-family: 'Barlow', sans-serif;
+    color: white;
 }
 
 .menu-btn {
     visibility: hidden;
 }
 
-@media screen and (max-width: 750px) {
+.contact-container  {
+    padding: 0.525rem 0.625rem;
+    background-color: white;
+    border-radius: 1.875rem;
+}
+
+.contact-container > a {
+    font-size: 0.875rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.contact-container:hover, .contact-container:hover > a  {
+    cursor: pointer;
+    background-color: rgb(111, 207, 255);
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
     .menu-btn {
         visibility: visible;
     }
 
     .nav-items {
+        visibility: hidden;
         position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 30px;
+        gap: 2.5rem;
+        padding: 3.125rem;
         left: 100vw;
-        top: 17vh;
+        top: 15vh;
         background-color: white;
-        width: 80vw;
+        width: 90vw;
         align-self: center;
         justify-self: center;
         transition: 1s ease-in-out;
     }
 
+    .nav-items > a {
+        color: hsl(232, 10%, 55%);
+        font-size: 1.125rem;
+    }
+
+    .contact-container, .contact-container > a {
+        background-color: hsl(51, 100%, 49%);
+        font-size: 1.125rem;
+    }
+
     .nav-items::before {
         position: absolute;
-        top: -25px;
+        top: -1.563rem;
         right: 0;
         content: "";
-        border-width: 15px;
+        border-width: 0.938rem;
         border-style: solid;
         border-color: transparent white white transparent;
     }
 
     .nav-items.opened {
-        transform: translateX(-90vw);
+        visibility: visible;
+        transform: translateX(-95vw);
     }
 }

@@ -9,15 +9,18 @@ export default function Navbar(){
     }
     return (
         <nav>
-            <img className='logo'  src='/images/logo.svg'></img>
+            <img className='logo'  src='/images/logo.svg' alt='Logo'></img>
             
             <div className={`nav-items ${isOpened ? "opened" : ""}`}>
                 <a>About</a> 
                 <a>Services</a> 
                 <a>Projects</a>
-                <a>Contact</a>
+                <div className='contact-container'>
+                    <a className='contact-link'>Contact</a>
+                </div>
+                
             </div>
-            <img className='menu-btn' src='/images/icon-hamburger.svg' onClick={toggleIsOpened}></img>
+            <img className='menu-btn' src='/images/icon-hamburger.svg' onClick={toggleIsOpened} alt='Menu button'></img>
         </nav>
         
     )
